@@ -21,7 +21,7 @@ const job = new CronJob(
       );
 
       feed.items.forEach((item) => {
-        if (new Date(item.isoDate).getTime() > Date.now() - 5 * 60 * 1000)
+        if (new Date(item.isoDate).getTime() > Date.now() - 24 * 60 * 60 * 1000)
           ctx.reply(item.title + ':' + item.link);
       });
     });
