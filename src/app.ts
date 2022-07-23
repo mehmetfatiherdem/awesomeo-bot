@@ -32,11 +32,11 @@ const job = new CronJob(
 );
 
 app.get('/', (req, res) => {
-  job.start();
   res.send('Hello World!');
 });
 
 app.listen(port, () => {
+  job.start();
   console.log(`Listening on port ${port}`);
 });
 
