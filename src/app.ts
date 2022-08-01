@@ -17,7 +17,7 @@ app.listen(port, () => {
 });
 
 bot.hears('cmd', (ctx) => {
-  ctx.reply('hi<br/> dice<br/>');
+  ctx.reply('hi\ndice\n');
 });
 
 bot.start((ctx) => ctx.reply('Hello there!'));
